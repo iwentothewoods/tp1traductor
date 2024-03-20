@@ -1,2 +1,6 @@
-# tp1traductor
-Traductor español - inglés
+# TP 1: Traductor Español - Inglés 
+
+**Integrantes:**
+- Dante Rodriguez
+- Lucas Teruel
+- Luna Lopardo
