@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f2ef"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etPalabra"
+        android:layout_width="255dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="424dp"
+        android:ems="10"
+        android:hint="Inserte la palabra a traducir"
+        android:textColor="#161514"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btTraducir"
+        android:layout_width="108dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="340dp"
+        android:text="Traducir"
+        android:backgroundTint="#2d2a28"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPalabra"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:text="Traductor Español - Inglés"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#161514"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="263dp"
+        android:layout_height="84dp"
+        android:text="Palabras en la BD: pajaro, gato, perro, mariposa, perezoso, ballena, oveja"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:textColor="#161514"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTraducir"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autores: Dante Rodriguez, Lucas Teruel, Luna Lopardo"
+        android:textColor="#161514"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btCerrar"
+        android:layout_width="59dp"
+        android:layout_height="41dp"
+        android:text="X"
+        android:backgroundTint="#E81123"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="Cerrar"
+        app:layout_constraintBottom_toTopOf="@+id/ivLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
